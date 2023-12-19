@@ -6,6 +6,8 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
   - [Module 2 - Introduction aux SGBDs](#module-2---introduction-aux-sgbds)
   - [Module 3 - Premiers pas avec MySQL](#module-3---premiers-pas-avec-mysql)
   - [Références (aller plus loin)](#références-aller-plus-loin)
+    - [Ouvrages](#ouvrages)
+  - [Sur le web](#sur-le-web)
 
 
 ## Module 2 - Introduction aux SGBDs
@@ -23,10 +25,20 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 
 ## Références (aller plus loin)
 
+### Ouvrages
+
 ![width:200px height:250px](assets/41zRUbNu19L._SX388_BO1%2C204%2C203%2C200_.jpg)![width:200px height:250px](assets/9782416003684_internet_w290.jpg)![width:200px height:250px](assets/9782416007507-modelisation-bases-donnees_g.webp)![width:200px height:250px](assets/70e960089be56859016cebdc672c5f27.jpg)![width:200px height:250px](assets/2023-01-30_11-04.png)
+
+- [Modélisation des bases de données: UML et les modèles entité-association, 4e édition ou 5e édition](https://www.eyrolles.com/Informatique/Livre/modelisation-des-bases-de-donnees-9782416007507/), de Christian Soutou et Frédéric Brouard, 2022 (pour la 5e). Une très bonne référence sur la modélisation des bases de données relationnelles, du modèle conceptuel au niveau physique. Très complet, plein de conseils, et d'exercices inspirés de cas réels. Ces deux auteurs ont souvent travaillé ensemble et le résultat est là (théorie, pratique, expertise en milieu pro). Un *must have*. (Pas fait pour les débutants sur le modèle relationnel, à étudier/parcourir après avoir acquis les bases et pratiquer un peu)
+- [Designing data intensive applications](https://www.pdfdrive.com/designing-data-intensive-applications-the-big-ideas-behind-reliable-scalable-and-maintainable-systems-e167514656.html), de Martin Kleppmann, 2017, publié par O'Reilly, une référence absolue sur les systèmes d'informations et sur les SGBD
+- [High Performance MySQL, 3rd Edition](https://learning.oreilly.com/library/view/high-performance-mysql/9781449332471/), de Schwartz, Zaitsev et Tkachenko, 2012, publié par O'Reilly
+- [Programmer avec MySQL: SQL - Transactions - PHP - Java - Optimisations - XML - JSON - Avec 40 exercices corrigés, 6eme édition](https://www.eyrolles.com/Informatique/Livre/programmer-avec-mysql-9782416003684/), de Christian Soutou, 2021, par Eyrolles. Très bon livre et complet sur le modèle relationnel et le SGBD MySQL, avec beaucoup d'exercices corrigés. Bon ouvrage pour débutants (et confirmés) pour apprendre les bases.
+
+## Sur le web
 
 - [Cours complet pour apprendre les systèmes de gestion de bases de données](https://sgbd.developpez.com/tutoriels/cours-complet-bases-de-donnees/), un cours complet de [Georges Gardarin](https://www.eyrolles.com/Accueil/Auteur/georges-gardarin-34/) sur les bases relationnelles
 - [Les meilleurs cours et tutoriels pour apprendre le SQL](https://sql.developpez.com/), par les membres de developpez.com. Un grand nombre de cours, tutoriels, exercices sur le sujet
 - Une [sélection de livres](https://sgbd.developpez.com/livres/) par les membres de developpez.com
 - Aller sur d'autres implémentations du standard ([MariaDB](https://mariadb.org/), [PostgreSQL](https://www.postgresql.org/), etc.)
 - Aller plus loin sur les questions d'optimisation ? Lire des articles sur le site [Use the index, Luke !](https://use-the-index-luke.com/fr), de Markus Winand
+- [Base de données, cours de E. Thirion](http://cours.thirion.free.fr/Cours/BaseDeDonnees1/index.php), les cours de E. Thirion sur MySQL. E. Thirion est un chercheur et enseignant en informatique depuis des années et a développé un site pour réunir et partager ses cours sur tout un tas de sujets liés au développement informatique (bases de la programmation, POO, UI, développement web, [bases de données relationnelles](http://cours.thirion.free.fr/Cours/BaseDeDonnees1/index.php), [Merise](http://cours.thirion.free.fr/Cours/Merise/index.php), etc.). Et on l'en remercie.
