@@ -1,16 +1,28 @@
--- Script d'insertion des données pour l'Exercice 2
+--
 
 -- Attention ! sur Windows, les noms des tables ne sont PAS sensibles à la casse, contrairement aux système UNIX (macOS, GNU/Linux)
 -- Vos noms de table sont donc probablement en minuscule dans votre base de données
 -- Corriger les noms de table du script pour qu'ils correspondent aux vôtres
 -- De la doc sur le sujet : https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_lower_case_table_names
 
+USE mod3;
+
+-- On vide les tables (Note: on pourrait aussi utiliser l'instruction TRUNCATE qui vide une table)
+-- Voir https://dev.mysql.com/doc/refman/8.0/en/truncate-table.html
 DELETE FROM Types;
 DELETE FROM Installer;
 DELETE FROM Poste;
 DELETE FROM Salle;
 DELETE FROM Segment;
 DELETE FROM Logiciel;
+
+
+INSERT INTO Types VALUES ('TX',  'Terminal X-Window');
+INSERT INTO Types VALUES ('UNIX','Systeme Unix');
+INSERT INTO Types VALUES ('PCNT','PC Windows  NT');
+INSERT INTO Types VALUES ('PCWS','PC Windows');
+INSERT INTO Types VALUES ('NC',  'Network Computer');
+INSERT INTO Types VALUES ('BeOs',  'Another machine');
 
 INSERT INTO Segment(ind_ip,nom_segment,etage) VALUES ('130.120.80','Brin RDC',NULL);
 INSERT INTO Segment(ind_ip,nom_segment,etage)  VALUES ('130.120.81','Brin 1er etage',NULL);
@@ -23,7 +35,7 @@ INSERT INTO Salle(num_salle,nom_salle,nb_postes,ind_ip) VALUES ('s11','Salle 11'
 INSERT INTO Salle(num_salle,nom_salle,nb_postes,ind_ip) VALUES ('s12','Salle 12',1,'130.120.81');
 INSERT INTO Salle(num_salle,nom_salle,nb_postes,ind_ip) VALUES ('s21','Salle 21',2,'130.120.82');
 
-INSERT INTO poste(num_poste,nom_poste,ind_ip,ad,type_poste,num_salle) VALUES ('p2','Poste 2','130.120.80','2','UNIX','s01');
+INSERT INTO Poste(num_poste,nom_poste,ind_ip,ad,type_poste,num_salle) VALUES ('p2','Poste 2','130.120.80','2','UNIX','s01');
 INSERT INTO Poste(num_poste,nom_poste,ind_ip,ad,type_poste,num_salle) VALUES ('p3','Poste 3','130.120.80','03','TX','s01');
 INSERT INTO Poste(num_poste,nom_poste,ind_ip,ad,type_poste,num_salle) VALUES ('p4','Poste 4','130.120.80','04','PCWS','s02');
 INSERT INTO Poste(num_poste,nom_poste,ind_ip,ad,type_poste,num_salle) VALUES ('p1','Poste 1','130.120.80','01','TX','s01');
@@ -45,14 +57,6 @@ INSERT INTO Logiciel(num_logiciel,nom_logiciel,date_achat,version,type_logiciel,
 INSERT INTO Logiciel(num_logiciel,nom_logiciel,date_achat,version,type_logiciel,prix) VALUES ('log7','I. I. S.',   '2002-04-12','2','PCNT',900);
 INSERT INTO Logiciel(num_logiciel,nom_logiciel,date_achat,version,type_logiciel,prix) VALUES ('log8','DreamWeaver','2003-09-21','2.0','BeOS',1400);
 
-
-INSERT INTO Types VALUES ('TX',  'Terminal X-Window');
-INSERT INTO Types VALUES ('UNIX','Systeme Unix');
-INSERT INTO Types VALUES ('PCNT','PC Windows  NT');
-INSERT INTO Types VALUES ('PCWS','PC Windows');
-INSERT INTO Types VALUES ('NC',  'Network Computer');
-
-
 INSERT INTO Installer (num_poste,num_logiciel,date_installation,delai) VALUES ('p2', 'log1', '2003-05-15',NULL);
 INSERT INTO Installer (num_poste,num_logiciel,date_installation,delai) VALUES ('p2', 'log2', '2003-09-17',NULL);
 INSERT INTO Installer (num_poste,num_logiciel,date_installation,delai) VALUES ('p4', 'log5',  NULL,NULL);
@@ -65,15 +69,11 @@ INSERT INTO Installer (num_poste,num_logiciel,date_installation,delai) VALUES ('
 INSERT INTO Installer (num_poste,num_logiciel,date_installation,delai) VALUES ('p11','log7', '2003-04-20',NULL);
 INSERT INTO Installer (num_poste,num_logiciel,date_installation,delai) VALUES ('p7', 'log7', '2002-04-01',NULL);
 
+-- Inspecter
 
 SELECT * FROM Segment;
-
 SELECT * FROM Salle;
-
 SELECT * FROM Poste;
-
 SELECT * FROM Logiciel;
-
 SELECT * FROM Installer;
-
 SELECT * FROM Types;
