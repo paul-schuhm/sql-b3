@@ -12,7 +12,7 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 
 [Voir toutes les ressources du module 2](./module-02/)
 
-- [Voir démo "La base de données la plus simple du monde"](./module-01/)
+- [Voir démo "La base de données la plus simple du monde"](./module-02/atelier-base-de-donnees-simple/)
 
 ## Module 3 - Premiers pas avec MySQL
 
