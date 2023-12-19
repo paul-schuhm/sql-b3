@@ -31,10 +31,10 @@ CREATE TABLE Pilote(
     -- Une FOREIGN KEY DOIT référencer une colonne indexée (une clé primaire ajoute un index sur la table, PRIMARY KEY = UNIQUE + NOT NULL + INDEX)
     -- pour être performante.
     -- See : https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html#foreign-key-restrictions
-    CONSTRAINT fk_pilote_work_for_compagnie FOREIGN KEY (id_compagnie) REFERENCES Compagnie(id)
+    CONSTRAINT fk_pilote_work_for_compagnie FOREIGN KEY (id_compagnie) REFERENCES Compagnie(id) ON DELETE CASCADE
 );
 
 -- Inspecter les tables créees
 
-DESCRIBE mydb.Compagnie;
-DESCRIBE mydb.Pilote;
+DESCRIBE mod3.Compagnie;
+DESCRIBE mod3.Pilote;
