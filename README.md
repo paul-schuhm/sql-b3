@@ -7,7 +7,7 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
   - [Module 3 - Premiers pas avec MySQL](#module-3---premiers-pas-avec-mysql)
   - [Références (aller plus loin)](#références-aller-plus-loin)
     - [Ouvrages](#ouvrages)
-  - [Sur le web](#sur-le-web)
+    - [Sur le web](#sur-le-web)
 
 
 ## Module 2 - Introduction aux SGBDs
@@ -34,7 +34,7 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 - [High Performance MySQL, 3rd Edition](https://learning.oreilly.com/library/view/high-performance-mysql/9781449332471/), de Schwartz, Zaitsev et Tkachenko, 2012, publié par O'Reilly
 - [Programmer avec MySQL: SQL - Transactions - PHP - Java - Optimisations - XML - JSON - Avec 40 exercices corrigés, 6eme édition](https://www.eyrolles.com/Informatique/Livre/programmer-avec-mysql-9782416003684/), de Christian Soutou, 2021, par Eyrolles. Très bon livre et complet sur le modèle relationnel et le SGBD MySQL, avec beaucoup d'exercices corrigés. Bon ouvrage pour débutants (et confirmés) pour apprendre les bases.
 
-## Sur le web
+### Sur le web
 
 - [Cours complet pour apprendre les systèmes de gestion de bases de données](https://sgbd.developpez.com/tutoriels/cours-complet-bases-de-donnees/), un cours complet de [Georges Gardarin](https://www.eyrolles.com/Accueil/Auteur/georges-gardarin-34/) sur les bases relationnelles
 - [Les meilleurs cours et tutoriels pour apprendre le SQL](https://sql.developpez.com/), par les membres de developpez.com. Un grand nombre de cours, tutoriels, exercices sur le sujet
