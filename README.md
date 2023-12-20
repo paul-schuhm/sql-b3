@@ -23,6 +23,7 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 - [Voir correction et commentaire du TD "Premiers pas avec MySQL"](./module-03/td-premiers-pas-avec-mysql-corrige-commente.md)
 - [Accéder à la démo des opérations définies par l'algèbre relationnelle](./module-03/demo-algebre-relationnelle/)
 - [Voir correction commentée de la fiche d'exercices (Exercices 1, 2 et 3)](./module-03/exercices/)
+- [Voir la démo atomicity](./module-03/demo-atomicity/)
 
 ## Références (aller plus loin)
 
