@@ -5,6 +5,7 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 - [sql-b3](#sql-b3)
   - [Module 2 - Introduction aux SGBDs](#module-2---introduction-aux-sgbds)
   - [Module 3 - Premiers pas avec MySQL](#module-3---premiers-pas-avec-mysql)
+  - [Module 4](#module-4)
   - [Références (aller plus loin)](#références-aller-plus-loin)
     - [Ouvrages](#ouvrages)
     - [Sur le web](#sur-le-web)
@@ -24,6 +25,10 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 - [Accéder à la démo des opérations définies par l'algèbre relationnelle](./module-03/demo-algebre-relationnelle/)
 - [Voir correction commentée de la fiche d'exercices (Exercices 1, 2 et 3)](./module-03/exercices/)
 - [Voir la démo atomicity](./module-03/demo-atomicity/)
+
+## Module 4
+
+- [Voir suggestions de correction](./module-04/exercices-suggestions-correction/)
 
 ## Références (aller plus loin)
 
