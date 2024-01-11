@@ -2,9 +2,9 @@ use exercice3;
 
 DROP TABLE IF EXISTS Facture_Ligne;
 DROP TABLE IF EXISTS Facture;
-DROP TABLE IF EXISTS Client ;
 DROP TABLE IF EXISTS Adresse_Entete;
 DROP TABLE IF EXISTS Adresse_Ligne;
+DROP TABLE IF EXISTS Client ;
 
 CREATE TABLE Client (
     -- On increment nous meme ici (comme on insere manuellement les données)
@@ -43,7 +43,7 @@ CREATE TABLE Adresse_Ligne (
 
 
 CREATE TABLE Facture (
-    facture_id int NOT NULL,
+    facture_id INT NOT NULL,
     -- On rajoute l'ENUM avec les tricode ATT, PAY
     facture_statut ENUM ('ATT', 'PAY'),
     facture_date_emission DATE,
@@ -58,11 +58,12 @@ CREATE TABLE Facture (
 CREATE TABLE Facture_Ligne (
     ligne_facture_id int AUTO_INCREMENT NOT NULL,
     ligne_facture_designation VARCHAR(32),
-    ligne_facture_quantite TINYINT,
-    ligne_facture_prix_unitaire_euro DECIMAL,
+    ligne_facture_quantite TINYINT CHECK (ligne_facture_quantite > 0),
+    ligne_facture_prix_unitaire_euro DECIMAL CHECK (ligne_facture_prix_unitaire_euro > 0),
     facture_id int NOT NULL,
     PRIMARY KEY (ligne_facture_id)
 ) ENGINE = InnoDB;
+
 
 
 -- Contrainte générée par AnalyseSI, non nécessaire.
