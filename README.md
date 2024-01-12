@@ -5,7 +5,9 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 - [sql-b3](#sql-b3)
   - [Module 2 - Introduction aux SGBDs](#module-2---introduction-aux-sgbds)
   - [Module 3 - Premiers pas avec MySQL](#module-3---premiers-pas-avec-mysql)
-  - [Module 4](#module-4)
+  - [Module 4 - Modélisation d'une base de données](#module-4---modélisation-dune-base-de-données)
+  - [Module 5 - Opérateurs, jointures et fonctions d'ensemble](#module-5---opérateurs-jointures-et-fonctions-densemble)
+  - [Module 6 - Niveau externe : vues, déclencheurs, fonctions et procédures stockées](#module-6---niveau-externe--vues-déclencheurs-fonctions-et-procédures-stockées)
   - [Références (aller plus loin)](#références-aller-plus-loin)
     - [Ouvrages](#ouvrages)
     - [Sur le web](#sur-le-web)
@@ -26,9 +28,19 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 - [Voir correction commentée de la fiche d'exercices (Exercices 1, 2 et 3)](./module-03/exercices/)
 - [Voir la démo atomicity](./module-03/demo-atomicity/)
 
-## Module 4
+## Module 4 - Modélisation d'une base de données
 
 - [Voir suggestions de correction](./module-04/exercices-suggestions-correction/)
+
+## Module 5 - Opérateurs, jointures et fonctions d'ensemble
+
+- [Accéder aux exercices et correction](./module-05/exercices/)
+- [Accéder au TD et à sa correction](./module-05/td/)
+
+## Module 6 - Niveau externe : vues, déclencheurs, fonctions et procédures stockées
+
+- [Accéder à la démo vue et triggers sur un petit système de site web éditorial](./module-06/demo-vues/)
+
 
 ## Références (aller plus loin)
 
