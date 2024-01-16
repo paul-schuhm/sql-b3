@@ -46,12 +46,13 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 
 ### Ouvrages
 
-<a href="./assets/41zRUbNu19L._SX388_BO1%2C204%2C203%2C200_.jpg" width=200 height=250>
+<img src="assets/9782416007507-modelisation-bases-donnees_g.webp" width=300 height=350>
+<img src="./assets/9782416003684_internet_w290.jpg" width=200 height=250>
+<img src="./assets/70e960089be56859016cebdc672c5f27.jpg" width=300 height=350>
+<img src="./assets/cover.jpg" width=200 height=250>
+<img src="./assets/2023-01-30_11-04.png" width=200 height=250>
+<img src="./assets/41zRUbNu19L._SX388_BO1%2C204%2C203%2C200_.jpg" width=200 height=250>
 
-![width:200px height:250px](assets/41zRUbNu19L._SX388_BO1%2C204%2C203%2C200_.jpg)
-
-
-![width:200px height:250px](assets/9782416003684_internet_w290.jpg)![width:200px height:250px](assets/9782416007507-modelisation-bases-donnees_g.webp)![width:200px height:250px](assets/70e960089be56859016cebdc672c5f27.jpg)![width:200px height:250px](assets/2023-01-30_11-04.png)![width:200px height:250px](assets/cover.jpg)
 
 - [Modélisation des bases de données: UML et les modèles entité-association, 4e édition ou 5e édition](https://www.eyrolles.com/Informatique/Livre/modelisation-des-bases-de-donnees-9782416007507/), de Christian Soutou et Frédéric Brouard, 2022 (pour la 5e). Une très bonne référence sur la modélisation des bases de données relationnelles, du modèle conceptuel au niveau physique. Très complet, plein de conseils, et d'exercices inspirés de cas réels. Ces deux auteurs ont souvent travaillé ensemble et le résultat est là (théorie, pratique, expertise en milieu pro). Un *must have*. (Pas fait pour les débutants sur le modèle relationnel, à étudier/parcourir après avoir acquis les bases et pratiquer un peu)
 - [Designing data intensive applications](https://www.pdfdrive.com/designing-data-intensive-applications-the-big-ideas-behind-reliable-scalable-and-maintainable-systems-e167514656.html), de Martin Kleppmann, 2017, publié par O'Reilly, une référence absolue sur les systèmes d'informations et sur les SGBD
