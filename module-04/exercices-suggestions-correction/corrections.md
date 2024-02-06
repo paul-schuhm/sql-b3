@@ -1,6 +1,6 @@
-# Correction exercices - Module 4 : Modélisation
+# Correction exercices - Module 4: Modélisation
 
-Version: 2
+version: 2
 
 # Exercice 1
 
@@ -154,11 +154,39 @@ SELECT num_facture FROM Facture WHERE YEAR(date_emission) = 2023 AND NOT paye;
 
 1. AnalyseSI peut rencontrer des problèmes avec les associations 1-1 car il place les clefs sur chaque relation de l'association. Il suffit de supprimer les colonnes `adresse_en_tete_id` et `adresse_ligne_id` de la relation `Adresse` et les contraintes FK correspondantes (voir code sql commenté).
 2. `TRUNCATE` ne fonctionne pas ici `TRUNCATE` ne provoque pas le ON DELETE Trigger, donc notre politique de ne peut être appliquée. `TRUNCATE` refuse de détruire la table si référence vers FK Citation de la doc : *"The `TRUNCATE` TABLE statement does not invoke `ON DELETE` triggers. `TRUNCATE TABLE` fails for an InnoDB table if there are any `FOREIGN KEY` constraints from other tables that reference the table. Foreign key constraints between columns of the same table are permitted."* Utiliser `DELETE FROM` à la place, qui supprimera chaque ligne individuellement sans toucher à la structure de la table.
-8. Il est impossible de supprimer un client en l'état car il est référencé par un enregistrement facture, via la contrainte de clef étrangère. Supprimer un client dans ces conditions briserait la cohérence des données. Pour le faire, on maintient la cohérence de la base en ajoutant une politique `ON DELETE CASCADE` (par défaut en mode `STRICT`) sur la clé étrangère de Facture vers Client et de LigneFacture vers Facture.
+3. -
+4. -
+5. -
+6. -
+7. Il est impossible de supprimer un client en l'état car il est référencé par un enregistrement facture, via la contrainte de clef étrangère. Supprimer un client dans ces conditions briserait la cohérence des données. Pour le faire, on maintient la cohérence de la base en ajoutant une politique `ON DELETE CASCADE` (par défaut en mode `STRICT`) sur la clé étrangère de Facture vers Client et de LigneFacture vers Facture.
+8. Oui ! il est possible de définir des contraintes `CHECK` *à l'échelle de la table* également. Dans ce cas, on peut référencer plusieurs colonnes dans la contrainte :
+
+~~~SQL
+-- Ajout des contraintes sur les lignes avec une contrainte CHECK (contraintes 9 et 10 de l'énoncé)
+ALTER TABLE Adresse_Entete 
+ADD CONSTRAINT ck_voie 
+CHECK 
+(LENGTH(adresse_en_tete_numero_voie_debut) + LENGTH(adresse_en_tete_numero_voie_fin) + LENGTH(adresse_en_tete_numero_complement) + LENGTH(adresse_en_tete_voie) <= 38);
+
+ALTER TABLE Adresse_Entete 
+ADD CONSTRAINT ck_ville_code_postal 
+CHECK 
+(LENGTH(adresse_en_tete_code_postal) + LENGTH(adresse_en_tete_ville) <= 38);
+
+-- Prérequis : On suppose que le client avec un id=1 est présent en base
+
+-- Adresse qui ne respecte pas le standard sur la ligne de la voie
+INSERT INTO Adresse_Entete(client_id, adresse_en_tete_code_postal, adresse_en_tete_ville, adresse_en_tete_voie, adresse_en_tete_numero_voie_debut , adresse_en_tete_numero_voie_fin, adresse_en_tete_numero_complement, adresse_en_tete_pays) VALUES (1, '75001', 'Paris', "Rue de l'Ambiance Spectaculaire", 123, 124, 'Bis', 'France');
+
+-- Adresse qui respecte le standard
+INSERT INTO Adresse_Entete(client_id, adresse_en_tete_code_postal, adresse_en_tete_ville, adresse_en_tete_voie, adresse_en_tete_numero_voie_debut , adresse_en_tete_numero_voie_fin, adresse_en_tete_numero_complement, adresse_en_tete_pays) VALUES (1, '75001', 'Paris', 'Rue de la paix', 123, 124, 'Bis', 'France');
+~~~
+
+<!-- [Voir solution avec mysqlworkbench](./exercice3-mysqlworkbench/schema.sql) -->
 
 ### Questions supplémentaires
 
-1. Ici il va falloir faire une jointure sur les 3 tables Client, Facture et Facture_Ligne pour répondre à la question
+1. Ici il va falloir faire une jointure sur les 3 tables `Client`, `Facture` et `Facture_Ligne` pour répondre à la question
 
 ~~~SQL
 -- Récupère la facture complète (avec toutes les lignes) d'un client
@@ -168,6 +196,7 @@ INNER JOIN Client c ON c.client_id=f.client_id
 INNER JOIN Facture_Ligne fl ON fl.facture_id=f.facture_id 
 WHERE c.client_id=1  AND f.facture_id=1;
 ~~~
+
 ~~~SQL
 -- Calcule montant total HT et TTC de la facture du client 1 (avec TVA)
 SELECT 
@@ -178,6 +207,7 @@ INNER JOIN Client c ON c.client_id=f.client_id
 INNER JOIN Facture_Ligne fl ON fl.facture_id=f.facture_id 
 WHERE c.client_id=1 AND  f.facture_id=1;
 ~~~
+
 ~~~SQL
 -- Calcule montant total HT et TTC de la facture du client 2 (sans TVA)
 SELECT 
