@@ -30,7 +30,7 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 
 ## Module 4 - Modélisation d'une base de données
 
-- [Voir suggestions de correction](./module-04/exercices-suggestions-correction/)
+- [Accéder aux exercices et correction](./module-04/)
 
 ## Module 5 - Opérateurs, jointures et fonctions d'ensemble
 
