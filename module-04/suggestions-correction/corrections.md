@@ -247,4 +247,4 @@ GROUP BY c.client_id;
 
 <!-- Également en Biblio -->
 
-[Télécharger le corrigé Original](https://www.orleans-informatique.com/info/sio/exercices/TD%20N%C2%B04%20-%20MERISE%202%20-%20SQL%20-%20corrig%C3%A9.pdf)
+[Télécharger le corrigé Original](https://www.orleans-informatique.com/info/sio/exercices/TD%20N%C2%B04%20-%20MERISE%202%20-%20SQL%20-%20corrig%C3%A9.pdf) proposé par J. Paquereau (BTS SIO)

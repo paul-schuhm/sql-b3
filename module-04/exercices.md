@@ -194,20 +194,16 @@ Faire le même exercice de conception de la base avec l'outil de conception [Ora
 
 ## Exercice 5 : Explorer et analyser une base existante
 
-On vous fournit un dump d'une base de données existante sous forme d'archive `external-db.zip`. Vous allez travailler dessus les prochaines semaines. 
+On vous fournit un dump d'une base de données existante sous forme d'archive `external-db.zip`. Vous allez travailler dessus les prochaines semaines. [Voici le lien pour la télécharger](https://github.com/datacharmer/test_db).
 
-> Me demander de vous fournir cette archive !
+> Sinon, me demander de vous fournir cette archive !
 
 1. Lire les instructions du `README` pour charger la base de données sur le serveur MySQL.
-2. A l'aide de requêtes SQL d'inspection, étudier la base de données. **Produire le MCD de la base**.
-3. Est-ce qu'un même employé peut travailler plusieurs fois pour le même département ?
+2. A l'aide de requêtes SQL d'inspection, étudier la base de données. **Produire le MCD de la base**. (Sans regarder celui fourni)
+3. Est-ce qu'un même employé peut travailler plusieurs fois (successivement) pour le même département ?
 
-<!-- 
-Fournir la base de données test : test_db sur les employees
- -->
 
 ## Exercice 6 : Parc immobilier
-
 
 - Le parc immobilier de la SCI (Société Civile Immobilière) EasyLocation est constitué d’appartements
 faisant partie d’immeubles situé à une adresse (n°, voie, code postal, ville)
@@ -253,4 +249,4 @@ Quelques rappels et conseils sur la démarche à a adopter pour entamer un trava
 - [String Functions and Operators](https://dev.mysql.com/doc/refman/8.0/en/string-functions.html), les fonctions MySQL sur les chaines de caractères
 - [Aggregate Function Descriptions](https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html)
 - [GROUP_CONCAT](https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_group-concat)
-- [test_db](https://github.com/datacharmer/test_db), le dépôt Github de la base de données externes
+- [test_db](https://github.com/datacharmer/test_db), le dépôt Github de la base de données externe
