@@ -8,6 +8,7 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
   - [Module 4 - Modélisation d'une base de données](#module-4---modélisation-dune-base-de-données)
   - [Module 5 - Opérateurs, jointures et fonctions d'ensemble](#module-5---opérateurs-jointures-et-fonctions-densemble)
   - [Module 6 - Niveau externe : vues, déclencheurs, fonctions et procédures stockées](#module-6---niveau-externe--vues-déclencheurs-fonctions-et-procédures-stockées)
+  - [Module 6 - Transactions et aller plus loin](#module-6---transactions-et-aller-plus-loin)
   - [Références (aller plus loin)](#références-aller-plus-loin)
     - [Ouvrages](#ouvrages)
     - [Sur le web](#sur-le-web)
@@ -43,6 +44,9 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 - [Accéder à la démo vue et triggers sur un petit système de site web éditorial](./module-06/demo-vues/)
 - [Accéder aux exercices](./module-06/exercices.md)
 
+## Module 6 - Transactions et aller plus loin
+
+À venir...
 
 ## Références (aller plus loin)
 
