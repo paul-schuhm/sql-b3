@@ -39,7 +39,9 @@ L'ensemble des sources SQL du module B3 Dev SQL, avec MySQL
 
 ## Module 6 - Niveau externe : vues, déclencheurs, fonctions et procédures stockées
 
+- [Accéder à la démo sur les triggers](./module-06/demo-trigger/)
 - [Accéder à la démo vue et triggers sur un petit système de site web éditorial](./module-06/demo-vues/)
+- [Accéder aux exercices](./module-06/exercices.md)
 
 
 ## Références (aller plus loin)
