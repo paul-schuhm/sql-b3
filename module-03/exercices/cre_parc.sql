@@ -4,6 +4,8 @@
 -- Version: 1.0
 USE mod3;
 
+
+
 CREATE TABLE Segment (
 	ind_ip varchar(11),
 	nom_segment varchar(20) NOT NULL,
